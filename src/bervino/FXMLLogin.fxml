@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="361.0" prefWidth="720.0" style="-fx-background-color: #66ff66;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bervino.FXMLLoginController">
+   <children>
+      <AnchorPane prefHeight="361.0" prefWidth="380.0">
+         <children>
+            <ImageView fitHeight="361.0" fitWidth="363.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../gambar/bg.jpg" />
+               </image>
+               <effect>
+                  <GaussianBlur radius="4.75" />
+               </effect>
+            </ImageView>
+            <Label layoutX="26.0" layoutY="144.0" text="Welcome To My From" textFill="WHITE">
+               <font>
+                  <Font name="Vani Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="198.0" text="Life is a game, play it. Life is a challenge, meet it." textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="210.0" text=" Life is an opportunity, capture it." textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="380.0" layoutY="17.0" prefHeight="328.0" prefWidth="322.0" style="-fx-background-color: rgb(75, 149, 145);">
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="87.72" radius="41.504999999999995" spread="0.05" width="80.3" />
+         </effect>
+         <children>
+            <Label layoutX="101.0" layoutY="21.0" text="From Login" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Aharoni Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="11.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="16.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/kunci.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="username" focusColor="#e23c18" layoutX="66.0" layoutY="83.0" maxWidth="222.0" minWidth="222.0" prefHeight="31.0" prefWidth="222.0" unFocusColor="#1af157">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#e23c18" layoutX="66.0" layoutY="150.0" maxWidth="222.0" minWidth="222.0" prefHeight="31.0" prefWidth="222.0" unFocusColor="#1af157">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="login" layoutX="101.0" layoutY="234.0" onAction="#masuk" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: #66ff66;" text="Login">
+               <font>
+                  <Font name="Vani" size="14.0" />
+               </font>
+               <effect>
+                  <GaussianBlur radius="1.75" />
+               </effect>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

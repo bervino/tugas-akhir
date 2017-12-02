@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="858.0" style="-fx-background-color: #c0392b; -fx-border-color: #ffff; -fx-border-width: 10px;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ta.FXMLDashboardController">
+   <children>
+      <Label layoutX="17.0" layoutY="164.0" prefHeight="30.0" prefWidth="72.0" text="Nama Barang" textFill="WHITE" />
+      <JFXTextField fx:id="nb" layoutX="129.0" layoutY="164.0" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="nl" layoutX="129.0" layoutY="218.0" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="np" layoutX="129.0" layoutY="305.0" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnadd" layoutX="76.0" layoutY="376.0" onAction="#add" prefHeight="25.0" prefWidth="72.0" text="Add" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="clr1" layoutX="186.0" layoutY="376.0" onAction="#clr" prefHeight="25.0" prefWidth="72.0" text="Clear" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="17.0" layoutY="118.0" prefHeight="30.0" prefWidth="72.0" text="Admin" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="admin" layoutX="129.0" layoutY="118.0" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="clr2" buttonType="RAISED" layoutX="362.0" layoutY="491.0" prefHeight="51.0" prefWidth="146.0" ripplerFill="#ebebeb" text="Clear" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="table" layoutX="362.0" layoutY="43.0" prefHeight="436.0" prefWidth="472.0" style="-fx-background-color: #ecf0f1;">
+         <columns>
+            <TableColumn fx:id="admint" prefWidth="75.0" text="Admin" />
+            <TableColumn fx:id="namabarang" prefWidth="75.0" text="N.Barang" />
+            <TableColumn fx:id="kodebarang" prefWidth="82.0" text="K.Barang" />
+            <TableColumn fx:id="noloker" prefWidth="83.0" text="No.Loker" />
+            <TableColumn fx:id="tgl" prefWidth="71.0" text="Tgl." />
+            <TableColumn fx:id="nama" prefWidth="85.0" text="Nama" />
+         </columns>
+      </TableView>
+      <Label layoutX="17.0" layoutY="219.0" prefHeight="30.0" prefWidth="72.0" text="Nomer Loker" textFill="WHITE" />
+      <Label layoutX="17.0" layoutY="266.0" prefHeight="30.0" prefWidth="72.0" text="Tgl.Penitipan" textFill="WHITE" />
+      <Label layoutX="17.0" layoutY="306.0" prefHeight="30.0" prefWidth="72.0" text="Nama Penitip" textFill="WHITE" />
+      <JFXDatePicker fx:id="tp" defaultColor="BLACK" layoutX="129.0" layoutY="270.0" />
+      <JFXButton layoutX="688.0" layoutY="491.0" prefHeight="51.0" prefWidth="146.0" text="Show" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="atas" layoutX="72.0" layoutY="25.0" prefHeight="37.0" prefWidth="223.0" text="Hai " textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="update" layoutX="540.0" layoutY="491.0" onAction="#update" prefHeight="51.0" prefWidth="117.0" text="Update" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
